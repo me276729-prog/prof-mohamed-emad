@@ -1,0 +1,363 @@
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f2f8f6;
+            color: #354d46;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 245px;
+            min-height: 100vh;
+            position: fixed;
+            right: 0;
+            top: 0;
+            background: white;
+            padding: 25px 18px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.04);
+        }
+
+        .logo {
+            color: #079e87;
+            font-size: 23px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .sidebar a {
+            display: block;
+            text-decoration: none;
+            color: #84958e;
+            padding: 14px;
+            margin-bottom: 10px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .sidebar a i {
+            margin-left: 10px;
+        }
+
+        .sidebar a:hover,
+        .sidebar a.active {
+            background: #079e87;
+            color: white;
+        }
+
+        .main-content {
+            margin-right: 245px;
+            padding: 30px;
+        }
+
+        .topbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .topbar h3 {
+            font-weight: bold;
+            color: #52796f;
+        }
+
+        .dark-mode-btn {
+            background: #e1f3ed;
+            color: #079e87;
+            border: none;
+            padding: 11px 18px;
+            border-radius: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 22px;
+            border-radius: 18px;
+            height: 100%;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+        }
+
+        .stat-icon {
+            width: 45px;
+            height: 45px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 13px;
+            font-size: 21px;
+            margin-bottom: 15px;
+        }
+
+        .green {
+            background: #d9f4eb;
+            color: #079e87;
+        }
+
+        .orange {
+            background: #fff0d5;
+            color: #e9a12b;
+        }
+
+        .blue {
+            background: #e1efff;
+            color: #438bd1;
+        }
+
+        .purple {
+            background: #eee5fa;
+            color: #9971c8;
+        }
+
+        .stat-card h6 {
+            color: #899b94;
+            font-size: 14px;
+        }
+
+        .stat-card h3 {
+            font-weight: bold;
+            color: #354d46;
+            margin-top: 10px;
+        }
+
+        .content-card {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            margin-top: 25px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+        }
+
+        .content-card h5 {
+            color: #52796f;
+            font-weight: bold;
+            margin-bottom: 22px;
+        }
+
+        .form-label {
+            color: #52796f;
+            font-weight: bold;
+        }
+
+        .form-control {
+            background: #f7faf8;
+            border: 1px solid #e4eee8;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 15px;
+        }
+
+        .form-control:focus {
+            background: white;
+            border-color: #079e87;
+            box-shadow: 0 0 0 3px rgba(7,158,135,0.10);
+        }
+
+        .form-control[type="number"] {
+            text-align: center;
+            direction: ltr;
+        }
+
+        .add-btn,
+        .mercy-btn {
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 13px 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .add-btn {
+            background: #079e87;
+        }
+
+        .add-btn:hover {
+            background: #067d6d;
+            color: white;
+        }
+
+        .mercy-btn {
+            background: #e6a23c;
+        }
+
+        .mercy-btn:hover {
+            background: #c98725;
+            color: white;
+        }
+
+        .table {
+            vertical-align: middle;
+            white-space: nowrap;
+        }
+
+        .table thead th {
+            background: #f7faf8;
+            color: #84958e;
+            padding: 15px;
+            font-size: 14px;
+        }
+
+        .table tbody td {
+            padding: 15px;
+            color: #53675f;
+        }
+
+        .edit-btn,
+        .delete-btn {
+            border: none;
+            padding: 7px 12px;
+            border-radius: 8px;
+        }
+
+        .edit-btn {
+            background: #e8f2ff;
+            color: #438bd1;
+            margin-left: 5px;
+        }
+
+        .delete-btn {
+            background: #ffebeb;
+            color: #dc3545;
+        }
+
+        .status-success,
+        .status-warning,
+        .status-fail {
+            padding: 7px 12px;
+            border-radius: 20px;
+        }
+
+        .status-success {
+            background: #d9f4eb;
+            color: #079e87;
+        }
+
+        .status-warning {
+            background: #fff0d5;
+            color: #c98725;
+        }
+
+        .status-fail {
+            background: #ffebeb;
+            color: #dc3545;
+        }
+
+        #errorMessage {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        #report {
+            line-height: 2;
+        }
+
+        .report-item {
+            background: #f2f8f5;
+            border-radius: 12px;
+            padding: 12px;
+            margin-bottom: 10px;
+        }
+
+        /* الوضع الليلي */
+
+        body.dark-mode {
+            background: #121820;
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .sidebar,
+        body.dark-mode .content-card,
+        body.dark-mode .stat-card {
+            background: #1e293b;
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .topbar h3,
+        body.dark-mode .content-card h5,
+        body.dark-mode .stat-card h3,
+        body.dark-mode .form-label,
+        body.dark-mode .content-card p {
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .text-secondary {
+            color: #cbd5e1 !important;
+        }
+
+        body.dark-mode .form-control {
+            background: #263548;
+            color: white;
+            border-color: #475569;
+        }
+
+        body.dark-mode .form-control::placeholder {
+            color: #cbd5e1;
+        }
+
+        body.dark-mode .table {
+            background: #1e293b;
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .table thead th {
+            background: #263548;
+            color: white;
+        }
+
+        body.dark-mode .table tbody td {
+            background: #1e293b;
+            color: #f1f5f9;
+            border-color: #334155;
+        }
+
+        body.dark-mode .report-item,
+        body.dark-mode .alert {
+            background: #263548;
+            color: white;
+            border-color: #475569;
+        }
+
+        body.dark-mode .dark-mode-btn {
+            background: #334155;
+            color: #facc15;
+        }
+
+        @media (max-width: 768px) {
+            .sidebar {
+                width: 70px;
+                padding: 20px 8px;
+            }
+
+            .sidebar .logo {
+                font-size: 11px;
+            }
+
+            .sidebar a {
+                font-size: 0;
+                text-align: center;
+            }
+
+            .sidebar a i {
+                font-size: 20px;
+                margin: 0;
+            }
+
+            .main-content {
+                margin-right: 70px;
+                padding: 15px;
+            }
+
+            .topbar {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+        }
+    
